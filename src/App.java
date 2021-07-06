@@ -14,7 +14,7 @@ public class App extends Application{
 
         Parent root = FXMLLoader.load(getClass().getResource("ui.fxml"));
 
-        Scene scene = new Scene(root, 300, 200);
+        Scene scene = new Scene(root, 600, 430);
 
         primaryStage.setTitle("Multi Notepad");
         primaryStage.setScene(scene);

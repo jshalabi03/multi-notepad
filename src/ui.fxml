@@ -65,23 +65,81 @@
             </BorderPane>
             <BorderPane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
                <bottom>
-                  <BorderPane prefHeight="21.0" prefWidth="300.0" BorderPane.alignment="CENTER" />
+                  <BorderPane prefHeight="21.0" prefWidth="300.0" BorderPane.alignment="CENTER">
+                     <right>
+                        <MenuButton mnemonicParsing="false" text="Control" BorderPane.alignment="CENTER">
+                           <items>
+                              <MenuItem mnemonicParsing="false" text="Save" />
+                              <MenuItem mnemonicParsing="false" text="Save as" />
+                              <MenuItem mnemonicParsing="false" text="Open" />
+                           </items>
+                        </MenuButton>
+                     </right>
+                  </BorderPane>
                </bottom>
+               <center>
+                  <TextArea prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+               </center>
+               <top>
+                  <HBox prefHeight="23.0" prefWidth="300.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label prefHeight="17.0" prefWidth="48.0" text="    Title:" />
+                        <TextField text="test.txt" />
+                     </children>
+                  </HBox>
+               </top>
+            </BorderPane>
+            <BorderPane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+               <bottom>
+                  <BorderPane prefHeight="21.0" prefWidth="300.0" BorderPane.alignment="CENTER">
+                     <right>
+                        <MenuButton mnemonicParsing="false" text="Control" BorderPane.alignment="CENTER">
+                           <items>
+                              <MenuItem mnemonicParsing="false" text="Save" />
+                              <MenuItem mnemonicParsing="false" text="Save as" />
+                              <MenuItem mnemonicParsing="false" text="Open" />
+                           </items>
+                        </MenuButton>
+                     </right>
+                  </BorderPane>
+               </bottom>
+               <center>
+                  <TextArea prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+               </center>
+               <top>
+                  <HBox prefHeight="23.0" prefWidth="300.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label prefHeight="17.0" prefWidth="48.0" text="    Title:" />
+                        <TextField text="test.txt" />
+                     </children>
+                  </HBox>
+               </top>
             </BorderPane>
             <BorderPane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
                <bottom>
-                  <BorderPane prefHeight="21.0" prefWidth="300.0" BorderPane.alignment="CENTER" />
+                  <BorderPane prefHeight="21.0" prefWidth="300.0" BorderPane.alignment="CENTER">
+                     <right>
+                        <MenuButton mnemonicParsing="false" text="Control" BorderPane.alignment="CENTER">
+                           <items>
+                              <MenuItem mnemonicParsing="false" text="Save" />
+                              <MenuItem mnemonicParsing="false" text="Save as" />
+                              <MenuItem mnemonicParsing="false" text="Open" />
+                           </items>
+                        </MenuButton>
+                     </right>
+                  </BorderPane>
                </bottom>
-            </BorderPane>
-            <BorderPane layoutX="310.0" layoutY="135.0" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2">
-               <bottom>
-                  <BorderPane prefHeight="21.0" prefWidth="300.0" BorderPane.alignment="CENTER" />
-               </bottom>
-            </BorderPane>
-            <BorderPane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
-               <bottom>
-                  <BorderPane prefHeight="21.0" prefWidth="300.0" BorderPane.alignment="CENTER" />
-               </bottom>
+               <center>
+                  <TextArea prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+               </center>
+               <top>
+                  <HBox prefHeight="23.0" prefWidth="300.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label prefHeight="17.0" prefWidth="48.0" text="    Title:" />
+                        <TextField text="test.txt" />
+                     </children>
+                  </HBox>
+               </top>
             </BorderPane>
          </children>
       </GridPane>
