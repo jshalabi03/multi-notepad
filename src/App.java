@@ -17,7 +17,6 @@ public class App extends Application{
         Scene scene = new Scene(root, 600, 430);
 
         primaryStage.setMaximized(true);
-        primaryStage.setFullScreen(true);
         primaryStage.setTitle("Multi Notepad");
         primaryStage.setScene(scene);
         primaryStage.show();
