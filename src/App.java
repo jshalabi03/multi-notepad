@@ -10,15 +10,21 @@ import javafx.stage.Stage;
 
 public class App extends Application{
 
+    private static final int TASKBAR_HEIGHT = 40;
+    private static final int MENU_HEADER_HEIGHT = 28;
+
+    private static final int V_RES = 1920;
+    private static final int H_RES = 1080;
+
     @Override
     public void start(Stage primaryStage) throws Exception{
         
 
-        Parent root = FXMLLoader.load(getClass().getResource("ui.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("ui_1.fxml"));
 
-        Scene scene = new Scene(root, 600, 430);
+        Scene scene = new Scene(root, V_RES, H_RES - TASKBAR_HEIGHT - MENU_HEADER_HEIGHT);
 
-        primaryStage.setMaximized(true);
+        // primaryStage.setMaximized(true);
         primaryStage.setTitle("Multi Notepad");
         primaryStage.setScene(scene);
         primaryStage.show();
