@@ -29,8 +29,8 @@ public class SceneController {
 
     @FXML
     public void switch_ui_1(ActionEvent e) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("../resources/ui_1.fxml"));
-        this.stage = (Stage)((Node)e.getSource()).getScene().getWindow();
+        Parent root = FXMLLoader.load(getClass().getResource("ui_1.fxml"));
+        this.stage = (Stage)this.menuBar_1.getScene().getWindow();
         this.scene = new Scene(root, App.V_RES, App.H_RES - App.TASKBAR_HEIGHT - App.MENU_HEADER_HEIGHT);
         this.stage.setMaximized(true);
         this.stage.setScene(this.scene);
@@ -47,7 +47,7 @@ public class SceneController {
 
     @FXML
     public void switch_ui_2H(ActionEvent e) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("../resources/ui_2H.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("ui_2H.fxml"));
         this.stage = (Stage)((Node)e.getSource()).getScene().getWindow();
         this.scene = new Scene(root, App.V_RES, App.H_RES - App.TASKBAR_HEIGHT - App.MENU_HEADER_HEIGHT);
         this.stage.setMaximized(true);
@@ -56,7 +56,7 @@ public class SceneController {
     
     @FXML
     public void switch_ui_4(ActionEvent e) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("../resources/ui_4.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("ui_4.fxml"));
         this.stage = (Stage)((Node)e.getSource()).getScene().getWindow();
         this.scene = new Scene(root, App.V_RES, App.H_RES - App.TASKBAR_HEIGHT - App.MENU_HEADER_HEIGHT);
         this.stage.setMaximized(true);
@@ -65,7 +65,7 @@ public class SceneController {
 
     @FXML
     public void switch_ui_6(ActionEvent e) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("../resources/ui_6.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("ui_6.fxml"));
         this.stage = (Stage)((Node)e.getSource()).getScene().getWindow();
         this.scene = new Scene(root, App.V_RES, App.H_RES - App.TASKBAR_HEIGHT - App.MENU_HEADER_HEIGHT);
         this.stage.setMaximized(true);

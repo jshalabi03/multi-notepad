@@ -6,7 +6,7 @@
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="909.0" prefWidth="1119.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SceneController">
    <top>
-      <MenuBar BorderPane.alignment="CENTER">
+      <MenuBar fx:id="menuBar_1" BorderPane.alignment="CENTER">
         <menus>
           <Menu mnemonicParsing="false" text="File">
             <items>
@@ -20,7 +20,7 @@
           </Menu>
             <Menu mnemonicParsing="false" text="View">
                <items>
-                  <MenuItem mnemonicParsing="false" onAction="#switch_ui_2V" text="One" />
+                  <MenuItem mnemonicParsing="false" onAction="#switch_ui_1" text="One" />
                   <MenuItem mnemonicParsing="false" text="Two, Horizontal" />
                   <MenuItem mnemonicParsing="false" text="Four" />
                   <MenuItem mnemonicParsing="false" text="Six" />
