@@ -8,7 +8,7 @@
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1002.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SceneController">
    <top>
-      <MenuBar fx:id="menuBar_1" BorderPane.alignment="CENTER">
+      <MenuBar fx:id="currentMenuBar" BorderPane.alignment="CENTER">
         <menus>
           <Menu mnemonicParsing="false" text="File">
             <items>
@@ -23,9 +23,9 @@
             <Menu mnemonicParsing="false" text="View">
                <items>
                   <MenuItem mnemonicParsing="false" onAction="#switch_ui_2V" text="Two, Vertical" />
-                  <MenuItem mnemonicParsing="false" text="Two, Horizontal" />
-                  <MenuItem mnemonicParsing="false" text="Four" />
-                  <MenuItem mnemonicParsing="false" text="Six" />
+                  <MenuItem mnemonicParsing="false" onAction="#switch_ui_2H" text="Two, Horizontal" />
+                  <MenuItem mnemonicParsing="false" onAction="#switch_ui_4" text="Four" />
+                  <MenuItem mnemonicParsing="false" onAction="#switch_ui_6" text="Six" />
                </items>
             </Menu>
           <Menu mnemonicParsing="false" text="Help">
