@@ -1,4 +1,4 @@
-package app;
+
 import java.util.ArrayList;
 
 import javafx.application.Application;
@@ -21,7 +21,7 @@ public class App extends Application{
     public void start(Stage primaryStage) throws Exception{
         
 
-        Parent root = FXMLLoader.load(getClass().getResource("../resources/ui_1.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("ui_1.fxml"));
 
         Scene scene = new Scene(root, V_RES, H_RES - TASKBAR_HEIGHT - MENU_HEADER_HEIGHT);
 
