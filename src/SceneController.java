@@ -17,7 +17,6 @@ public class SceneController {
 
     @FXML MenuBar currentMenuBar;
 
-
     private Stage stage;
 
     @FXML
@@ -47,11 +46,17 @@ public class SceneController {
 
     private void switchUI(String url) throws IOException{
         Parent root = FXMLLoader.load(getClass().getResource(url));
-        this.stage = (Stage)this.currentMenuBar.getScene().getWindow();
         Scene sc = new Scene(root, App.V_RES, App.H_RES - App.TASKBAR_HEIGHT - App.MENU_HEADER_HEIGHT);
+        this.stage = (Stage)this.currentMenuBar.getScene().getWindow();
         this.stage.setMaximized(true);
         this.stage.setScene(sc);
     }
 
+    @FXML
+    public void close(ActionEvent e) {
+        if(this.stage == null)
+            this.stage = (Stage)this.currentMenuBar.getScene().getWindow();
+        this.stage.close();
+    }
     
 }
