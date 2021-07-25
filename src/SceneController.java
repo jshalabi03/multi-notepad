@@ -1,4 +1,6 @@
 
+import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
 
 import javafx.event.ActionEvent;
@@ -63,6 +65,23 @@ public class SceneController {
 
     protected void updateStage() {
         if(this.stage == null) this.stage = (Stage)this.currentMenuBar.getScene().getWindow();
+    }
+
+    protected void open(TextArea ta, TextField title) throws IOException{
+        updateStage();
+        FileChooser fc = new FileChooser();
+        fc.setTitle("Select file");
+        File file = fc.showOpenDialog(this.stage);
+        if(file != null && file.exists()) {
+            //  Writes the file to input stream
+            FileInputStream in = new FileInputStream(file);
+            byte[] chars = new byte[(int)file.length()];
+            in.read(chars);
+            // Sets text area and text field to corresponding values
+            ta.setText(new String(chars));
+            title.setText(file.getName());
+            in.close();
+        }
     }
     
 }
