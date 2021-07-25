@@ -9,6 +9,9 @@ import javafx.scene.Scene;
 import javafx.scene.control.ContextMenu;
 import javafx.scene.control.MenuBar;
 import javafx.scene.control.MenuItem;
+import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
+import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 import javafx.stage.Window;
 import javafx.scene.Node;
@@ -54,9 +57,12 @@ public class SceneController {
 
     @FXML
     public void close(ActionEvent e) {
-        if(this.stage == null)
-            this.stage = (Stage)this.currentMenuBar.getScene().getWindow();
+        updateStage();
         this.stage.close();
+    }
+
+    protected void updateStage() {
+        if(this.stage == null) this.stage = (Stage)this.currentMenuBar.getScene().getWindow();
     }
     
 }
