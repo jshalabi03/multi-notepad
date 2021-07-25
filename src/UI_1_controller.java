@@ -16,12 +16,12 @@ import javafx.scene.Node;
 
 public class UI_1_controller extends SceneController{
     @FXML
-    TextArea ta;
+    private TextArea ta;
     @FXML
-    TextField title;
+    private TextField title;
 
     @FXML
-    void open_1(ActionEvent e) throws IOException{
+    private void open_1(ActionEvent e) throws IOException{
         super.open(this.ta, this.title);
     }
 }

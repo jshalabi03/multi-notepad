@@ -54,20 +54,20 @@
                            <items>
                               <MenuItem mnemonicParsing="false" text="Save" />
                               <MenuItem mnemonicParsing="false" text="Save as" />
-                              <MenuItem mnemonicParsing="false" text="Open" />
+                              <MenuItem mnemonicParsing="false" onAction="#open_left" text="Open" />
                            </items>
                         </MenuButton>
                      </right>
                   </BorderPane>
                </bottom>
                <center>
-                  <TextArea prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+                  <TextArea fx:id="ta_left" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
                </center>
                <top>
                   <HBox prefHeight="23.0" prefWidth="300.0" BorderPane.alignment="CENTER">
                      <children>
                         <Label prefHeight="17.0" prefWidth="48.0" text="    Title:" />
-                        <TextField text="test.txt" />
+                        <TextField fx:id="title_left" text="test.txt" />
                      </children>
                   </HBox>
                </top>
@@ -80,20 +80,20 @@
                            <items>
                               <MenuItem mnemonicParsing="false" text="Save" />
                               <MenuItem mnemonicParsing="false" text="Save as" />
-                              <MenuItem mnemonicParsing="false" text="Open" />
+                              <MenuItem mnemonicParsing="false" onAction="#open_right" text="Open" />
                            </items>
                         </MenuButton>
                      </right>
                   </BorderPane>
                </bottom>
                <center>
-                  <TextArea prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+                  <TextArea fx:id="ta_right" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
                </center>
                <top>
                   <HBox prefHeight="23.0" prefWidth="300.0" BorderPane.alignment="CENTER">
                      <children>
                         <Label prefHeight="17.0" prefWidth="48.0" text="    Title:" />
-                        <TextField text="test.txt" />
+                        <TextField fx:id="title_right" text="test.txt" />
                      </children>
                   </HBox>
                </top>
