@@ -45,7 +45,7 @@
                     <items>
                       <MenuItem mnemonicParsing="false" text="Save" />
                         <MenuItem mnemonicParsing="false" text="Save as" />
-                      <MenuItem mnemonicParsing="false" text="Open" />
+                      <MenuItem mnemonicParsing="false" onAction="#open_1" text="Open" />
                     </items>
                      <font>
                         <Font size="20.0" />
@@ -64,7 +64,7 @@
                      <font>
                         <Font size="20.0" />
                      </font></Label>
-                  <TextField prefHeight="66.0" prefWidth="506.0" text="test.txt">
+                  <TextField fx:id="title" prefHeight="66.0" prefWidth="506.0" text="test.txt">
                      <padding>
                         <Insets left="5.0" top="5.0" />
                      </padding>
@@ -75,7 +75,7 @@
             </HBox>
          </top>
          <center>
-            <TextArea prefHeight="927.0" prefWidth="1939.0" BorderPane.alignment="CENTER" />
+            <TextArea fx:id="ta" prefHeight="927.0" prefWidth="1939.0" BorderPane.alignment="CENTER" />
          </center>
       </BorderPane>
    </left>

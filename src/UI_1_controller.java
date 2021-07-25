@@ -19,4 +19,9 @@ public class UI_1_controller extends SceneController{
     TextArea ta;
     @FXML
     TextField title;
+
+    @FXML
+    void open_1(ActionEvent e) throws IOException{
+        super.open(this.ta, this.title);
+    }
 }
