@@ -29,27 +29,27 @@ public class SceneController {
     private Stage stage;
 
     @FXML
-    public void switch_ui_1(ActionEvent e) throws IOException {
+    protected void switch_ui_1(ActionEvent e) throws IOException {
         switchUI("ui_1.fxml");
     }
 
     @FXML
-    public void switch_ui_2V(ActionEvent e) throws IOException {
+    protected void switch_ui_2V(ActionEvent e) throws IOException {
         switchUI("ui_2V.fxml");
     }
 
     @FXML
-    public void switch_ui_2H(ActionEvent e) throws IOException {
+    protected void switch_ui_2H(ActionEvent e) throws IOException {
         switchUI("ui_2H.fxml");
     }
     
     @FXML
-    public void switch_ui_4(ActionEvent e) throws IOException {
+    protected void switch_ui_4(ActionEvent e) throws IOException {
         switchUI("ui_4.fxml");
     }
 
     @FXML
-    public void switch_ui_6(ActionEvent e) throws IOException {
+    protected void switch_ui_6(ActionEvent e) throws IOException {
         switchUI("ui_6.fxml");
     }
 
@@ -62,7 +62,7 @@ public class SceneController {
     }
 
     @FXML
-    public void close(ActionEvent e) {
+    protected void close(ActionEvent e) {
         updateStage();
         this.stage.close();
     }
