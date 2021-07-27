@@ -24,4 +24,9 @@ public class UI_1_controller extends SceneController{
     private void open_1(ActionEvent e) throws IOException{
         super.open(this.ta, this.title);
     }
+
+    @FXML
+    private void save_1(ActionEvent e) throws IOException {
+        super.save(this.ta);
+    }
 }
