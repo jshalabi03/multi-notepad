@@ -1,3 +1,4 @@
+import java.io.File;
 import java.io.IOException;
 
 import javafx.event.ActionEvent;
@@ -19,6 +20,7 @@ public class UI_1_controller extends SceneController{
     private TextArea ta;
     @FXML
     private TextField title;
+    private File file;
 
     @FXML
     private void open_1(ActionEvent e) throws IOException{
