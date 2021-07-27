@@ -2,6 +2,7 @@
 import java.awt.Desktop;
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
@@ -86,6 +87,17 @@ public class SceneController {
             title.setText(file.getName());
             in.close();
         }
+    }
+
+    protected void save(TextArea ta) throws IOException{
+        updateStage();
+        FileChooser fc = new FileChooser();
+        fc.setTitle("Select File");
+        File file = fc.showSaveDialog(this.stage);
+        if(file == null) return;
+        FileOutputStream os = new FileOutputStream(file);
+        os.write(ta.getText().getBytes());
+        os.close();
     }
 
     @FXML
