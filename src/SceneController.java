@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.net.URI;
 import java.net.URISyntaxException;
 
@@ -101,11 +102,17 @@ public class SceneController {
     }
 
     @FXML
-    protected void onHelp(ActionEvent e) throws IOException, URISyntaxException{
+    protected void onHelp(ActionEvent e) throws IOException, URISyntaxException {
         final String link = "https://github.com/jshalabi03/multi-notepad";
         Desktop dp = Desktop.getDesktop();
         if(!dp.isSupported(Desktop.Action.BROWSE)) return;
         dp.browse(new URI(link));
+    }
+
+    protected void saveTextToFile(String content, File file) throws IOException {
+        PrintWriter pw = new PrintWriter(file);
+        pw.println(content);
+        pw.close();
     }
     
 }
