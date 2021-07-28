@@ -90,15 +90,16 @@ public class SceneController {
         }
     }
 
-    protected void save(TextArea ta) throws IOException{
+    protected File save_as(TextArea ta) throws IOException{
         updateStage();
         FileChooser fc = new FileChooser();
         fc.setTitle("Select File");
         File file = fc.showSaveDialog(this.stage);
-        if(file == null) return;
+        if(file == null) return null;
         FileOutputStream os = new FileOutputStream(file);
         os.write(ta.getText().getBytes());
         os.close();
+        return file;
     }
 
     @FXML
@@ -113,6 +114,10 @@ public class SceneController {
         PrintWriter pw = new PrintWriter(file);
         pw.println(content);
         pw.close();
+    }
+
+    protected void saveTextAreaToFile(TextArea ta, File file) throws IOException {
+        this.saveTextToFile(ta.getText(), file);
     }
     
 }
