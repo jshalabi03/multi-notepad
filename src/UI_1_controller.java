@@ -20,7 +20,6 @@ public class UI_1_controller extends SceneController{
     private TextArea ta;
     @FXML
     private TextField title;
-    private File file = null;
 
     @FXML
     private void open_1(ActionEvent e) throws IOException{
@@ -28,13 +27,7 @@ public class UI_1_controller extends SceneController{
     }
 
     @FXML
-    private void save_1(ActionEvent e) throws IOException {
-        if(this.file == null) this.save_as_1(e);
-        super.saveTextAreaToFile(this.ta, this.file);
-    }
-
-    @FXML
     private void save_as_1(ActionEvent e) throws IOException {
-        this.file = super.save_as(this.ta);
+        super.save_as(this.ta);
     }
 }
